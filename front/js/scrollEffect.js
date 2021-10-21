@@ -2,7 +2,8 @@ var sr;
 window.sr = new ScrollReveal({ reset: true });
 
 var slideUp = {
-    duration   : 600,
+    duration   : 700,
+    distance: 0,
     easing : 'ease-in-out',
     origin: 'bottom',
     scale : 1,
@@ -11,9 +12,9 @@ var slideUp = {
 };
 
 var slideLeft = {
-    duration   : 600,
+    duration   : 1200,
     distance: '100%',
-    easing : 'ease-out',
+    easing : 'ease-in-out',
     origin: 'left',
     scale : 1,
     viewFactor : 0,
@@ -22,7 +23,7 @@ var slideLeft = {
 };
 
 var slideRight = {
-    duration   : 600,
+    duration   : 1000,
     distance: '100%',
     easing : 'ease-in-out',
     origin: 'right',
@@ -33,14 +34,27 @@ var slideRight = {
 };
 
 var slideDown = {
-    duration   : 600,
-    distance: '100%',
-    duration   : 500,
+    duration   : 950,
+    distance: 0,
+   
     easing : 'ease-in-out',
     origin: 'top',
     desktop: true,
     scale : 1,
     reset      : true,
+    viewFactor : 0,
+    opacity: 0.01
+};
+
+var iconsFooter = {
+    duration : 1800,
+    distance: '100%',
+    origin: "top",
+    easing : 'ease-out',
+    origin: 'top',
+    desktop: true,
+    scale : 1,
+    reset: true,
     viewFactor : 0,
     opacity: 0.01
 };
@@ -54,3 +68,11 @@ sr.reveal('.nos-projets', slideDown);
 sr.reveal('#contact', slideDown);
 
 sr.reveal('footer', slideRight);
+
+sr.reveal('.icon1', iconsFooter, {delay: 30});
+sr.reveal('.icon2', iconsFooter, {delay: 50});
+sr.reveal('.icon3', iconsFooter, {delay: 100});
+
+sr.reveal('.icon4', iconsFooter, {delay: 200});
+
+sr.reveal('.icon5', iconsFooter);
