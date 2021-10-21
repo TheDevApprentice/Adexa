@@ -1,36 +1,56 @@
+var sr;
+window.sr = new ScrollReveal({ reset: true });
+
 var slideUp = {
-    distance: '150%',
+    duration   : 600,
+    easing : 'ease-in-out',
     origin: 'bottom',
+    scale : 1,
+    viewFactor : 0,
     opacity: null
 };
 
 var slideLeft = {
+    duration   : 600,
     distance: '100%',
-    
+    easing : 'ease-out',
     origin: 'left',
-    opacity: null
+    scale : 1,
+    viewFactor : 0,
+    delay : 200,
+    opacity: 0.01
 };
 
 var slideRight = {
+    duration   : 600,
     distance: '100%',
-    
+    easing : 'ease-in-out',
     origin: 'right',
-    opacity: null
+    scale : 1,
+    viewFactor : 0,
+    opacity: 0.01, 
+    delay : 200
 };
 
 var slideDown = {
+    duration   : 600,
     distance: '100%',
+    duration   : 500,
+    easing : 'ease-in-out',
     origin: 'top',
-    opacity: null
+    desktop: true,
+    scale : 1,
+    reset      : true,
+    viewFactor : 0,
+    opacity: 0.01
 };
 
-ScrollReveal().reveal('.nav', slideLeft);
+sr.reveal('.nav', slideLeft);
 
-ScrollReveal().reveal('.section-1', slideRight);
-ScrollReveal().reveal('.section-2', slideLeft);
+sr.reveal('.section-1', slideRight);
+sr.reveal('.section-2', slideLeft);
+sr.reveal('.nos-projets', slideDown);
 
-ScrollReveal().reveal('.nos-projets', slideDown);
+sr.reveal('#contact', slideDown);
 
-ScrollReveal().reveal('#contact', slideUp);
-
-ScrollReveal().reveal('footer', slideDown);
+sr.reveal('footer', slideRight);
