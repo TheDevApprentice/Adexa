@@ -34,7 +34,7 @@ var slideRight = {
 };
 
 var slideDown = {
-    duration   : 1250,
+    duration   : 1950,
     distance: 0,
    
     easing : 'ease-in-out',
@@ -47,7 +47,7 @@ var slideDown = {
 };
 
 var iconsFooter = {
-    duration : 1800,
+    duration : 3500,
     distance: '100%',
     origin: "top",
     easing : 'ease-out',
@@ -69,10 +69,10 @@ sr.reveal('#contact', slideDown);
 
 sr.reveal('footer', slideRight);
 
-sr.reveal('.icon1', iconsFooter, {delay: 30});
-sr.reveal('.icon2', iconsFooter, {delay: 50});
-sr.reveal('.icon3', iconsFooter, {delay: 100});
+sr.reveal('.icon1', iconsFooter);
+sr.reveal('.icon2', iconsFooter);
+sr.reveal('.icon3', iconsFooter);
 
-sr.reveal('.icon4', iconsFooter, {delay: 200});
+sr.reveal('.icon4', iconsFooter);
 
 sr.reveal('.icon5', iconsFooter);
