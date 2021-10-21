@@ -34,7 +34,7 @@ var slideRight = {
 };
 
 var slideDown = {
-    duration   : 950,
+    duration   : 1250,
     distance: 0,
    
     easing : 'ease-in-out',
